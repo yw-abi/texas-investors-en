@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+
+<html dir="ltr" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport"/>
+<meta content="#143a46" name="theme-color"/>
+<meta content="Aspect Boutique Investments - Land acquisition, development, and construction of single-family homes in developing neighborhoods of Houston, Texas." name="description"/>
+<title>Land Acquisition, Development, and Construction of Single-Family Homes in Developing Neighborhoods of Houston, Texas | Aspect Boutique Investments</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<style>
+    :root {
+      --teal:#143a46;
+      --teal-2:#1d4e5d;
+      --blue:#29ABE2;
+      --blue-soft:#eaf6fc;
+      --ink:#17262d;
+      --body:#33444d;
+      --muted:#71828b;
+      --line:#dfe8ec;
+      --surface:#ffffff;
+      --tint:#f6f9fb;
+      --sand:#f5f1ea;
+      --max:1180px;
+      --text:760px;
+      --shadow:0 24px 70px -38px rgba(20,58,70,.55);
+      --radius:26px;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{
+      font-family:'Assistant',system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+      background:var(--surface);color:var(--body);font-size:17px;line-height:1.78;
+      -webkit-text-size-adjust:100%;text-rendering:optimizeLegibility;
+    }
+    img{max-width:100%;display:block}
+    a{color:inherit}
+    .progress{position:fixed;top:0;left:0;height:3px;background:var(--blue);width:0;z-index:100}
+    .topbar{position:sticky;top:0;z-index:80;background:rgba(255,255,255,.94);backdrop-filter:blur(14px);border-bottom:1px solid rgba(223,232,236,.78)}
+    .topbar .inner{max-width:var(--max);margin:auto;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:10px 22px}
+    .brand{display:flex;align-items:center;text-decoration:none;min-width:176px}
+    .brand-logo{width:230px;height:60px;object-fit:cover;object-position:50% 50%;border-radius:0}
+    nav{display:flex;align-items:center;gap:22px;font-size:15.5px;color:var(--teal);font-weight:700}
+    nav a{text-decoration:none;opacity:.86;transition:opacity .16s,color .16s}
+    nav a:hover{opacity:1;color:var(--blue)}
+    .nav-cta{background:var(--teal);color:#fff!important;padding:9px 15px;border-radius:999px;opacity:1}
+
+    .hero{position:relative;min-height:76svh;display:grid;align-items:end;overflow:hidden;background:var(--teal);isolation:isolate}
+    .hero::before{content:"";position:absolute;inset:0;background:url('homes-exterior.jpg') center/cover no-repeat;z-index:-3;transform:scale(1.04)}
+    .hero::after{content:"";position:absolute;inset:0;background:
+      radial-gradient(circle at 20% 20%,rgba(41,171,226,.35),transparent 34%),
+      linear-gradient(270deg,rgba(6,25,31,.20),rgba(6,25,31,.86) 52%,rgba(6,25,31,.96));z-index:-2}
+    .hero-inner{width:100%;max-width:var(--max);margin:auto;padding:84px 24px 58px;display:grid;grid-template-columns:minmax(0,650px) minmax(250px,410px);gap:54px;align-items:end}
+    .hero-card{color:#fff;padding:34px;border:1px solid rgba(255,255,255,.18);background:rgba(9,36,45,.42);box-shadow:0 30px 80px -44px #000;border-radius:30px;backdrop-filter:blur(10px)}
+    .hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(41,171,226,.16);border:1px solid rgba(41,171,226,.45);color:#dff6ff;padding:6px 13px;border-radius:999px;font-size:14px;font-weight:700;margin-bottom:18px}
+    .hero h1{font-size:clamp(32px,5vw,62px);line-height:1.08;font-weight:800;letter-spacing:-.02em;color:#fff;margin-bottom:18px}
+    .hero .subtitle{font-size:clamp(20px,2.4vw,29px);font-weight:700;color:#dff6ff;margin-bottom:22px;line-height:1.25}
+    .hero .summary{font-size:19px;color:#d8e8ed;max-width:610px;margin-bottom:28px}
+    .hero-actions{display:flex;flex-wrap:wrap;gap:13px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:14px;padding:13px 20px;text-decoration:none;font-weight:800;line-height:1.2;transition:transform .16s,box-shadow .16s,background .16s}
+    .btn:hover{transform:translateY(-1px)}
+    .btn.primary{background:#fff;color:var(--teal);box-shadow:0 20px 35px -24px #000}
+    .btn.secondary{background:rgba(255,255,255,.08);color:#fff;border:1px solid rgba(255,255,255,.34)}
+    .hero-panel{background:rgba(255,255,255,.95);border-radius:30px;padding:25px;box-shadow:var(--shadow);border:1px solid rgba(255,255,255,.64)}
+    .hero-panel .logo-box{background:#fff;border-radius:22px;padding:16px 18px 12px;margin-bottom:18px}
+    .hero-panel img.logo-large{width:100%;height:86px;object-fit:cover;object-position:50% 50%;margin:auto}
+    .metrics{display:grid;gap:12px}
+    .metric{padding:14px 15px;border-radius:17px;background:var(--tint);border:1px solid var(--line)}
+    .metric strong{display:block;color:var(--teal);font-size:20px;line-height:1.1;margin-bottom:3px}
+    .metric span{color:var(--muted);font-size:14.5px}
+
+    main{max-width:var(--max);margin:auto;padding:38px 24px 0}
+    .intro{display:grid;grid-template-columns:minmax(0,1fr) 350px;gap:42px;align-items:start;padding:42px 0 22px}
+    .intro-copy{max-width:var(--text)}
+    .intro-copy .lead{font-size:20px;color:var(--ink);font-weight:600;line-height:1.74}
+    .intro p,.content-section p{margin:0 0 15px}
+    .intro p:last-child,.content-section p:last-child{margin-bottom:0}
+    .aside-card{position:sticky;top:92px;background:linear-gradient(180deg,var(--tint),#fff);border:1px solid var(--line);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow)}
+    .aside-card h3{font-size:23px;color:var(--teal);line-height:1.2;margin-bottom:13px}
+    .aside-card p{font-size:16px;color:var(--body)}
+    .aside-card .mini{display:grid;gap:10px;margin-top:18px}
+    .aside-card .mini div{display:flex;gap:10px;align-items:flex-start;background:#fff;border:1px solid var(--line);border-radius:15px;padding:12px}
+    .aside-card .mini div::before{content:"";flex:0 0 9px;width:9px;height:9px;border-radius:999px;background:var(--blue);margin-top:9px}
+
+    .content-section{display:grid;grid-template-columns:minmax(0,1fr) 430px;gap:46px;align-items:center;padding:74px 0;border-top:1px solid var(--line)}
+    .content-section.wide{grid-template-columns:minmax(0,1fr)}
+    .content-section.reverse{grid-template-columns:430px minmax(0,1fr)}
+    .content-section.reverse .section-copy{grid-column:2}
+    .content-section.reverse .section-media{grid-column:1;grid-row:1}
+    .section-copy{max-width:var(--text)}
+    .eyebrow{display:inline-flex;color:var(--blue);font-size:14px;font-weight:800;letter-spacing:.02em;margin-bottom:8px}
+    h2{font-size:clamp(27px,3.2vw,42px);line-height:1.18;color:var(--teal);font-weight:800;letter-spacing:-.02em;margin-bottom:20px;position:relative;padding-bottom:14px}
+    h2::after{content:"";position:absolute;left:0;bottom:0;width:64px;height:4px;border-radius:999px;background:var(--blue)}
+    .section-media{border-radius:30px;overflow:hidden;box-shadow:var(--shadow);background:var(--tint);min-height:330px}
+    .section-media img{width:100%;height:100%;min-height:330px;object-fit:cover}
+    .feature-list{list-style:none;display:grid;gap:13px;margin-top:18px}
+    .feature-list.two-col{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .feature-list li{position:relative;background:var(--tint);border:1px solid var(--line);border-radius:18px;padding:16px 18px 16px 44px;font-size:16.5px;line-height:1.65;color:var(--ink)}
+    .feature-list li::before{content:"";position:absolute;left:15px;top:21px;width:16px;height:16px;border-radius:6px;background:var(--blue-soft)}
+    .feature-list li::after{content:"";position:absolute;left:19px;top:24px;width:8px;height:5px;border-right:2px solid var(--blue);border-bottom:2px solid var(--blue);transform:rotate(45deg)}
+    .feature-list strong{color:var(--teal);font-weight:800}
+    .callout{margin-top:22px;border:1px solid #cfe5ee;background:linear-gradient(180deg,var(--blue-soft),#fff);border-radius:22px;padding:22px 24px;color:var(--teal);font-weight:600}
+    .quote-card{background:var(--teal);color:#e9f5f8;border-radius:28px;padding:28px;box-shadow:var(--shadow)}
+    .quote-card p{font-size:18px;line-height:1.75}
+
+    .gallery{border-top:1px solid var(--line);padding:74px 0}
+    .gallery-head{max-width:760px;margin-bottom:28px}
+    .gallery-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:20px}
+    .gallery-grid figure{position:relative;border-radius:28px;overflow:hidden;box-shadow:var(--shadow);min-height:300px;background:#dfe8ec}
+    .gallery-grid img{width:100%;height:100%;object-fit:cover;min-height:300px}
+    .gallery-grid figure:nth-child(1){grid-row:span 2;min-height:620px}
+    .gallery-grid figure:nth-child(1) img{min-height:620px}
+    figcaption{position:absolute;left:18px;bottom:18px;color:#fff;background:rgba(7,30,38,.72);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,.2);padding:8px 12px;border-radius:999px;font-size:14px;font-weight:700}
+
+    .pdf-section{border-top:1px solid var(--line);padding:74px 0}
+    .pdf-card{display:grid;grid-template-columns:minmax(0,1fr) 390px;gap:28px;align-items:start;background:linear-gradient(180deg,#fff,var(--tint));border:1px solid var(--line);border-radius:30px;padding:28px;box-shadow:var(--shadow)}
+    .pdf-viewer{min-height:620px;border-radius:20px;overflow:hidden;border:1px solid var(--line);background:#fff}
+    .pdf-viewer iframe{width:100%;height:620px;border:0;display:block;background:#fff}
+    .pdf-info{padding:8px}
+    .pdf-info h2{margin-bottom:16px}
+    .pdf-info p{margin-bottom:18px}
+    .pdf-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}
+    .pdf-actions .btn{padding:12px 17px}
+    .pdf-actions .dark{background:var(--teal);color:#fff}
+    .pdf-actions .light{background:#fff;border:1px solid var(--line);color:var(--teal)}
+
+    .cta{margin-top:22px;background:linear-gradient(135deg,var(--teal),#0f2c36);color:#fff}
+    .cta-inner{max-width:var(--max);margin:auto;padding:60px 24px;text-align:center}
+    .cta h2{color:#fff;max-width:760px;margin:0 auto 16px}
+    .cta h2::after{left:50%;transform:translateX(-50%);background:var(--blue)}
+    .cta p{max-width:650px;margin:0 auto 24px;color:#d0e5eb;font-size:18px}
+    .wa-btn{background:#2a8c5e;color:#fff;box-shadow:0 18px 38px -24px #000}
+    .wa-btn:hover{background:#247a52}
+    .disclaimer{max-width:var(--max);margin:auto;padding:34px 24px;color:var(--muted);font-size:13.5px;line-height:1.7}
+    .disclaimer h3{font-size:15px;color:var(--body);font-weight:800;margin-bottom:8px}
+    footer{background:#0d2d37;color:#a8c6cf;text-align:center;font-size:13.5px;padding:26px 20px;line-height:1.8}
+    footer b{color:#fff}
+    .floating-wa{position:fixed;right:22px;bottom:22px;z-index:70;width:56px;height:56px;border-radius:999px;background:#2a8c5e;display:flex;align-items:center;justify-content:center;box-shadow:0 18px 40px -22px #000;text-decoration:none}
+    .floating-wa svg{width:28px;height:28px}
+
+    @media (max-width: 960px) {
+      .topbar .inner{padding:8px 18px}
+      nav a:not(.nav-cta){display:none}
+      .brand-logo{width:190px;height:52px}
+      .hero-inner{grid-template-columns:1fr;padding-top:60px;gap:24px}
+      .hero::after{background:linear-gradient(180deg,rgba(6,25,31,.35),rgba(6,25,31,.94))}
+      .hero-panel{max-width:460px}
+      .intro,.content-section,.content-section.reverse,.pdf-card{grid-template-columns:1fr}
+      .content-section.reverse .section-copy,.content-section.reverse .section-media{grid-column:auto;grid-row:auto}
+      .aside-card{position:relative;top:auto}
+      .feature-list.two-col{grid-template-columns:1fr}
+      .gallery-grid{grid-template-columns:1fr}
+      .gallery-grid figure:nth-child(1),.gallery-grid figure:nth-child(1) img{min-height:360px}
+      .pdf-viewer,.pdf-viewer iframe{min-height:520px;height:520px}
+    }
+    @media (max-width: 620px) {
+      body{font-size:16.5px;line-height:1.74}
+      .hero-inner,main{padding-inline:18px}
+      .hero-card{padding:24px;border-radius:24px}
+      .hero .summary{font-size:17.5px}
+      .hero-panel{padding:18px;border-radius:24px}
+      .hero-panel img.logo-large{height:72px}
+      .content-section,.gallery,.pdf-section{padding:52px 0}
+      .section-media,.section-media img{min-height:260px}
+      .pdf-card{padding:18px;border-radius:24px}
+      .pdf-viewer,.pdf-viewer iframe{min-height:430px;height:430px}
+      .floating-wa{right:16px;bottom:16px;width:52px;height:52px}
+    }
+    @media print {
+      .topbar,.progress,.floating-wa,.hero-actions,.pdf-viewer,.cta{display:none}
+      .hero{min-height:auto;background:#fff;color:#000}
+      .hero::before,.hero::after{display:none}
+      .hero-card,.hero-panel{box-shadow:none;background:#fff;color:#000;border:1px solid #ccc}
+    }
+  </style>
+</head>
+<body>
+<div class="progress" id="progress"></div>
+<header class="topbar">
+<div class="inner">
+<a aria-label="Aspect Boutique Investments" class="brand" href="#top">
+<img alt="Aspect Boutique Investments" class="brand-logo" src="Horizontal.png"/>
+</a>
+<nav aria-label="Primary Navigation">
+<a href="#model">The Model</a>
+<a href="#houston">Houston</a>
+<a href="#process">The Process</a>
+<a href="#proforma">Pro Forma</a>
+<a class="nav-cta" href="https://wa.me/972537650555?text=Hello%2C%20I%20came%20from%20the%20Aspect%20website%20and%20would%20like%20to%20hear%20more%20about%20the%20Houston%20investment%20model." rel="noopener" target="_blank">Talk to Us</a>
+</nav>
+</div>
+</header>
+<section aria-label="Intro" class="hero" id="top">
+<div class="hero-inner">
+<div class="hero-card">
+<div class="hero-badge">Aspect Boutique Investments</div>
+<h1>Land Acquisition, Development, and Construction of Single-Family Homes in Developing Neighborhoods of Houston, Texas</h1>
+<div class="subtitle">How We Arrived at the Model, and What We Found Along the Way</div>
+<p class="summary">This document is intended to explain the thinking that led us to the model, the structure we built around the investment, and the points we believe are important to understand before moving forward.</p>
+<div class="hero-actions">
+<a class="btn primary" href="#proforma">View Pro Forma Example</a>
+<a class="btn secondary" href="https://wa.me/972537650555?text=Hello%2C%20I%20came%20from%20the%20Aspect%20website%20and%20would%20like%20to%20hear%20more%20about%20the%20Houston%20investment%20model." rel="noopener" target="_blank">WhatsApp Conversation</a>
+</div>
+</div>
+<aside aria-label="Model Highlights" class="hero-panel">
+<div class="logo-box"><img alt="Aspect Boutique Investments" class="logo-large" src="Horizontal.png"/></div>
+<div class="metrics">
+<div class="metric"><strong>15+ Years of Experience</strong><span>Guidance, management, and development of real-estate projects</span></div>
+<div class="metric"><strong>Houston, Texas</strong><span>Developing neighborhoods with rental demand</span></div>
+<div class="metric"><strong>Independent Asset</strong><span>A single-family home under the investor’s direct ownership</span></div>
+</div>
+</aside>
+</div>
+</section>
+<main>
+<section class="intro" id="model">
+<div class="intro-copy">
+<div class="eyebrow">The Basis of the Model</div>
+<p class="lead">We are a development company specializing in guiding, managing, and developing real-estate projects in Israel, with more than 15 years of experience.</p>
+<p>Over the years, we have founded and managed companies in the fields of development, planning, marketing, and execution. We have employed, and continue to employ, dozens of construction supervisors directly, worked with hundreds of contractors and professionals, and managed projects totaling hundreds of millions of shekels. At the same time, we are partners of leading business groups and operate ourselves as real-estate developers in large-scale projects.</p>
+<p>The core of our activity is guiding and managing private ground-up residential construction projects. Over the years, we have accompanied hundreds of families and investors and led the entire process for them, from locating and acquiring the land, through planning, financing, permitting, execution, and supervision, to delivery, leasing, and property management.</p>
+<p>The experience we have accumulated allows us to examine each transaction through its full value chain: purchase price, planning options, construction costs, financing structure, property management, and long-term return potential.</p>
+<p>We have never operated only as outside advisors. We have built and managed complete professional systems around projects, both as partners and as managers, in supervision, finance, planning, marketing, execution, and property management. This way of working grew out of the understanding that making the right decisions requires knowing and managing the full picture, not just one part of the process.</p>
+<p>The current model was built in the same way that has guided us over the years: study the market in depth, operate ourselves, examine each stage of the process, and only then build an organized investment framework around it. For us, this is first and foremost a way of working — not an off-the-shelf product and not a deal created for marketing purposes.</p>
+<p>In recent years, against the backdrop of market changes, rising construction costs, and the new interest-rate environment, we asked ourselves a simple question: if we had to invest our own money today, where and how would we do it?</p>
+<p>We looked for a model that does not merely look good on paper, but one we personally feel comfortable operating in and staying with over time: a tangible asset, clear ownership, a process we know how to manage, and the potential to benefit both from the value created during development and from long-term ownership of the property.</p>
+<p>From this examination, we arrived at a model of acquiring land, planning, and constructing new homes in developing Houston neighborhoods, with the goal of creating the asset at the right price, designing it in advance for the rental market, and holding it while the neighborhood and surrounding area continue to develop.</p>
+<p>In parallel, we invested in building a local professional infrastructure for our Houston activity. We built a network of local partners and professionals that includes contractors, property managers, lenders, brokers, planners, and professional consultants. The goal was to build a real ability to operate on the ground, manage the process continuously, and not depend on remote management. Today, we have shifted the core of our activity to Houston. Our activity there continues to expand, but the strategy remains focused: operate in a market we know, focus on a defined area of activity, deepen our expertise, and build experience, relationships, and professional advantage over time. This is the same worldview that guides our activity in Israel: focus, specialization, long-term relationships, and as much control as possible over the stages of the process.</p>
+<p>This document is intended to explain the thinking that led us to the model, the structure we built around the investment, and the points we believe are important to understand before moving forward.</p>
+</div>
+<aside class="aside-card">
+<h3>A Full Picture, Not Just a Deal</h3>
+<p>The site is built around the same guiding principle that appears in the document: examining the entire value chain — purchase price, planning, execution, financing, management, and return potential.</p>
+<div class="mini">
+<div>Entry into the land and planning stage</div>
+<div>Designing the home in advance for the rental market</div>
+<div>Long-term holding of an independent asset</div>
+</div>
+</aside>
+</section>
+<section class="content-section" id="learned">
+<div class="section-copy">
+<div class="eyebrow">Our Way of Working</div>
+<h2>What We Learned Along the Way</h2>
+<p>Along the way, we examined several operating paths in parallel: development and land acquisition, self-build construction in Israel, the United States, and the Netherlands, development transactions, various ownership and management models, and the purchase of new homes from developers and public builders. Some of these paths became real activity, others are still under review by us, and each helped sharpen the way we want to operate.</p>
+<p>The deeper we went, the clearer the central question became: where is the right entry point for an investor today? Not only in terms of purchase price, but through a full-picture view: asset type, ownership structure, financing, cash flow, risk management, statutory certainty, level of control over the process, management method, and the flexibility available to the investor later on.</p>
+<p>From this perspective, we focused on developing and building new homes in developing Houston neighborhoods. We found a model that fits the way we know and like to work, and that allows us to combine value creation during the development process with long-term ownership of a private, income-producing asset.</p>
+<p>In practice, this is a natural continuation of our operating model in Israel over the years. A significant part of our experience was built around land acquisition, planning, and home construction within private development. We believe that the ability to enter a transaction at the land and planning stage, participate in the value created throughout development, and ultimately remain with a private, stable, income-producing home creates the right combination of appreciation potential and the security and flexibility provided by direct ownership of a tangible long-term asset.</p>
+</div>
+<div class="section-media">
+<img alt="Developing neighborhood with single-family homes" loading="lazy" src="neighborhood-street.jpg"/>
+</div>
+</section>
+<section class="content-section reverse" id="houston">
+<div class="section-copy">
+<div class="eyebrow">Market Selection</div>
+<h2>What We Found in Houston</h2>
+<p>We looked for a market that allows us to connect development activity with long-term investment in an income-producing asset. Houston offers a combination we believe in: a large and growing metropolitan area, a significant rental market, and a wide range of employment and economic activity centers in energy, medicine, industry, technology, aviation, logistics, and space. In addition, Houston, as part of Texas’s long-standing policy environment, is considered very favorable for landlords. For us, however, choosing Houston is only the first stage. Within such a large metropolitan area, there are significant differences between areas and neighborhoods, so most of our work focuses on choosing the right location within the market.</p>
+<p>We focus on established neighborhoods undergoing a real process of change and renewal, in locations with good access to downtown, major transportation routes, and employment centers. We look for areas where the change can already be seen on the ground: new construction entering alongside older housing stock, expanding private investment, and a gradual change in the character of the neighborhood. The goal is to identify the point in time when the change process has already begun and can be seen in practice, but land and home prices still do not, in our view, reflect the full future potential of the area.</p>
+</div>
+<div class="section-media">
+<img alt="Houston skyline" loading="lazy" src="houston-skyline.jpg"/>
+</div>
+</section>
+<section class="content-section wide" id="why-houston">
+<div class="section-copy">
+<div class="eyebrow">Long-Term Trends</div>
+<h2>So Why Houston?</h2>
+<p>Our choice of Houston does not rest on a single data point, but on a combination of long-term trends we look for in a market where we want both to develop and to hold assets over time:</p>
+<ul class="feature-list"><li><strong>A metropolitan area that continues to expand.</strong> The Houston area is experiencing ongoing demographic growth, driven to a significant extent by the arrival of new residents from within the United States and abroad. For the housing market, this means a continuing addition of new households that need housing solutions, both for purchase and for rent.</li>
+<li><strong>A broad and diverse economic base.</strong> The local economy has long since ceased to rely only on the energy sector. The Houston metropolitan area concentrates millions of jobs in medicine, industry, energy, logistics, aviation, technology, and space. This diversification is important to us because it creates many employment centers and different sources of housing demand.</li>
+<li><strong>A persistent gap between housing need and the pace of supply creation.</strong> For years, the pace of construction in the United States has not fully kept up with the growth in the number of households. In a growing market like Houston, this gap reinforces, in our view, the logic of holding a quality residential asset in an area where the population and economic activity continue to grow.</li>
+<li><strong>A housing market that has shown a positive long-term trend.</strong> From a long-term perspective, home prices and rents in the Houston area have shown an upward trend. We do not build the model on an assumption of rapid price increases, but view the market’s long-term strengthening as another component alongside the property’s current income.</li>
+<li><strong>Real demand for rental homes.</strong> Beyond the general data, we also see the market through our activity on the ground. In properties we currently manage, listing a suitable home at the right price generates inquiries and rental applications within a short time. For us, the important figure is not only the rent amount on paper, but the ability to find a suitable tenant and reduce vacancy periods.</li>
+<li><strong>A market suited to a long-term holding strategy.</strong> At a time when parts of the U.S. real-estate market are facing a slowdown, Houston continues to benefit from population growth, job creation, and significant housing demand. This combination is one of the reasons we see value in building at the right price and holding the asset after project completion, rather than building a model dependent on immediate sale. Texas is also considered “landlord-friendly” — favorable to property owners in many respects.</li></ul>
+</div>
+</section>
+<section class="content-section" id="why-build">
+<div class="section-copy">
+<div class="eyebrow">Product Logic</div>
+<h2>Why Did We Choose to Develop and Build New Homes?</h2>
+<p>In Israel, development and construction have been a central part of our activity for years, and we know well the advantages of entering a transaction at the land and planning stage. When we examined activity in the United States, we wanted to understand whether the same logic applies here as well, and whether there is real justification for going through the development and construction process instead of purchasing an existing, rental-ready asset. As we went deeper, we concluded that the advantage is not only in receiving a new home at the end. For us, value is created throughout the entire path, from land acquisition through planning and execution to receiving a new rental-oriented asset acquired at a cost that reflects the development process, not only the market price of a finished product.</p>
+<ul class="feature-list two-col"><li><strong>Control of the asset from the first stage.</strong> Instead of purchasing an existing home and dealing with decisions someone else made years ago, we start from the land and design the product according to its purpose. The choice of layout, specifications, finishes, and systems is made with long-term rental, simple maintenance, and durability in mind.</li>
+<li><strong>A new asset with less operational uncertainty.</strong> When purchasing an older home, even a professional inspection cannot always anticipate all future expenses. HVAC systems, roofing, electrical, plumbing, and additional components may become significant expenses during the holding period. In a new home, the starting point is different: the systems are new, and the need for significant maintenance in the early years is expected to be lower.</li>
+<li><strong>Warranty and support after construction is completed.</strong> The home is built by contractors we select and work with directly. Before delivery, a professional inspection of the property is carried out, any deficiencies are referred to the contractor for correction, and after delivery, the relevant warranty periods apply according to the agreements and coverages applicable to the home.</li>
+<li><strong>A home that is truly rental-ready.</strong> For us, completion of construction is not the end of the process. The home is designed and delivered as ready as possible for a tenant to move in, including systems and products required for the property’s ongoing operation. The goal is to minimize the gap between receiving the home and starting the rental period, and to avoid, as much as possible, unexpected additions and expenses after delivery.</li>
+<li><strong>Value is created throughout the development process.</strong> This is one of the key differences in our model. We are not buying a completed home from another developer and adding an intermediary layer. The process starts with acquiring land suitable for several homes and continues through engineering and planning checks, subdivision into lots, planning, permitting, and construction. Concentrating the process and the scale of construction allow us to work with contractors and suppliers more efficiently and benefit from economies of scale.</li>
+<li><strong>An intention to create a gap already at the entry point.</strong> The goal is to reach the end of the construction process with a total home cost lower than the price of a comparable new asset in the market. In projects and alternatives we examined, the gap may reach tens of thousands of dollars per home. For us, this is an important component of the model because it creates a layer of value even before any assumptions about future price appreciation.</li>
+<li><strong>A deliberate choice of areas undergoing change.</strong> We focus on established neighborhoods where renewal is already visible in practice: land acquisitions, demolition of old homes, new construction, and gradual change in the residential environment. The goal is not to guess where renewal will begin in the future, but to enter places where the process is already happening and where, in our view, a gap still exists between the current state and the area’s long-term potential.</li>
+<li><strong>An independent asset that allows decision-making flexibility.</strong> At the end of the process, the investor holds a single-family home under direct ownership, not a proportional share in a joint project. This means each asset stands on its own and can, subject to market and financing conditions, be held, rented, sold, or refinanced without dependence on the sale of the other homes in the project.</li>
+<li><strong>The possibility of financing based on the asset’s performance.</strong> Subject to lender approval and market conditions at the time the loan is provided, DSCR financing can be explored, where repayment capacity is assessed primarily in relation to the expected rental income from the property. For a foreign investor, this is a meaningful tool that allows the financing structure to be considered as part of the transaction itself, not only based on personal income.</li></ul>
+</div>
+<div class="section-media">
+<img alt="New homes in Houston" loading="lazy" src="homes-exterior.jpg"/>
+</div>
+</section>
+<section class="content-section wide" id="why-now">
+<div class="section-copy">
+<div class="eyebrow">The Entry Point</div>
+<h2>Why Now?</h2>
+<p>In recent years, the U.S. real-estate market has gone through a prolonged period of high interest rates and a slowdown in some markets. This environment has affected activity levels, property prices, and land prices, and in our view has created interesting entry points for those able to look beyond the current period and act for the long term.</p>
+<p>We do not build the model on a forecast of a sharp and rapid market change, nor on an assumption that interest rates will fall at a certain time. Our perspective is longer: buying at the right price, creating value throughout the development and construction process, and holding a new asset in a neighborhood undergoing development.</p>
+<p>We believe that a combination of the housing market gradually returning to more natural activity levels, the possibility of a more favorable interest-rate environment in the future, and continued development of the neighborhoods where we operate may support value appreciation over time. At the same time, our goal is to create part of the value within the development process itself, so that at delivery the investor receives a new home at the price set within the transaction, which, based on our checks and comparisons, is expected to be attractive relative to purchasing a comparable new asset in the market.</p>
+<p>Precisely because the planning, land subdivision, permitting, and construction process takes time, we see an advantage in entering the transaction at an early stage. The investor locks in the entry terms according to the transaction framework, while during planning and construction the project and neighborhood continue to progress.</p>
+<p>In addition, in the model we built, the timing of entry also matters: the longer the initial capital is provided, the greater the benefit the transaction mechanism gives the investor in the final purchase price. In this way, the time required in any case for planning, permitting, and construction becomes part of the economic advantage of early entry.</p>
+</div>
+</section>
+<section class="content-section wide" id="private-asset">
+<div class="section-copy">
+<div class="eyebrow">Ownership Structure</div>
+<h2>Benefit from development advantages while ending with a private asset.</h2>
+<p>The goal of the model is to connect two worlds: on one hand, the economic advantages of a development process — land acquisition, planning, permitting, and construction at a scale that enables economies of scale; and on the other hand, the simplicity and flexibility of direct ownership of a single-family rental home, with the ability to hold it and benefit from its appreciation potential over time.</p>
+<p>The investor does not purchase an unspecified proportional share in a project and does not remain a partner in a shared portfolio of assets. At the end of the process, each investor purchases a specific home of their own, which stands as an independent asset separate from the other homes in the project.</p>
+<p>The home is held through the investor’s private entity, the financial activity is managed in an account belonging to the investor, and any financing, if taken, relates only to that investor’s asset. After the purchase is completed, decisions regarding the future of the asset are in the investor’s hands.</p>
+<p>The investor can continue to hold and rent the home, explore refinancing in the future, sell when they choose, or continue holding the asset for years. There is no dependence on the decisions of other investors and no need to wait for the sale of the entire project in order to make a decision regarding a specific home.</p>
+<p>The development activity is carried out together and with economies of scale, but at the end of the process each investor remains with an independent asset of their own and the freedom to make decisions according to their needs and goals.</p>
+</div>
+</section>
+<section class="content-section wide" id="role">
+<div class="section-copy">
+<div class="eyebrow">Our Involvement</div>
+<h2>Our role in the process.</h2>
+<p>Our value in the process comes from accumulated experience in managing complex processes on the ground. Real-estate transactions almost never succeed or fail because of one detail alone. The result is built from the connection between many components: proper acquisition, planning, due diligence, financing, cash flow, selection of professionals, insurance, timelines, execution, leasing, management, and ongoing communication among all parties involved.</p>
+<p>That is where most of our experience lies. Over the years, we have repeatedly had to connect many parts into one process that works, make decisions in real time, solve problems as they arise, and maintain the broad picture without losing the small details.</p>
+<p>This is also how we evaluate new opportunities. We prefer to learn the process through real action, invest ourselves, and deal with the challenges in practice before bringing investors into the activity.</p>
+<p>Our activity is based largely on personal relationships and referrals, not on a broad external marketing operation. Therefore, for us, the trust built along the way is a central part of our activity. The goal is to manage every process with the same level of involvement and responsibility with which we manage our own investments: ask the hard questions, examine the numbers in depth, avoid falling in love with a deal, and move forward only when the overall picture justifies it.</p>
+<p>Part of our role is also knowing when not to move forward. When the numbers do not work, the location is not suitable, financing terms undermine the economic logic, or we do not have confidence in the professional and managerial framework, we prefer to stop, change direction, or wait for a better opportunity.</p>
+<p>This principle is important to us on a personal level as well. In projects where we operate with investors, we also invest our own capital and remain throughout the process with identical or comparable assets. For us, investors are not occasional buyers of a product we sell, but partners in the path and in the activity we are building for the long term. The fact that at the end of the process we remain with assets alongside the investors creates, in our view, a clear and simple alignment of interests: we want for investors the same transaction quality, execution level, and management framework that we require for ourselves.</p>
+</div>
+</section>
+<section class="content-section wide" id="capital">
+<div class="section-copy">
+<div class="eyebrow">Transaction Structure</div>
+<h2>Capital timing and the discount mechanism.</h2>
+<p>One of the main advantages in the transaction structure is the timing of capital deployment throughout the process. In the first stage, the investor provides initial equity of approximately $150,000, depending on the project and the specific agreement terms. The initial capital enables entry into the transaction and advances the development process, including land acquisition, planning, subdivision, permitting, and the preparations required before construction. After providing the initial capital, the investor is not required to complete the full remaining home price during the planning and construction period. Completion of the equity and placement of the long-term financing occur only at home delivery and final closing, according to the binding agreements and the financing terms available at that time.</p>
+<p>In addition, the transaction structure includes a mechanism under which the period between providing the initial capital and actual home delivery affects the final purchase price. As the planning, permitting, and construction period lengthens, the investor’s price benefit increases according to the mechanism set in the agreement. In this way, a schedule delay does not work only against the investor, but is translated into an additional discount in the purchase price. In practice, the structure allows the investor to enter the process at an early stage and lock in the transaction terms, without providing the full capital and without beginning to pay a mortgage on a home that is still in planning or construction. At delivery, the investor completes the purchase, places the relevant financing, and receives a new rental-ready home.</p>
+</div>
+</section>
+<section class="content-section wide" id="time">
+<div class="section-copy">
+<div class="eyebrow">The Time Concept</div>
+<h2>Time as part of the strategy.</h2>
+<p>When purchasing a completed home, the investor completes the purchase, provides the full capital and financing, and begins renting the property shortly after closing. In our model, the entry point is different. The investor enters the transaction at an early stage of the value chain, while the project advances through planning, subdivision, permitting, and construction. During this period, according to the transaction structure, the investor is not required to provide the full remaining home price and does not pay a long-term mortgage on an asset that is still under construction.</p>
+<p>Delivery is expected on average within about one and a half to two years from the date the initial capital is provided. During this period, the project advances, the home is built, and the neighborhood continues to develop. At the same time, according to the mechanism set in advance in the agreement, the more time passes from providing the initial capital to delivery, the greater the benefit in the final purchase price. At the end of the process, the investor receives a brand-new home at the price set in the transaction, plus the benefit accrued according to the time that has passed.</p>
+<p>For us, the time required in any case for planning and construction is part of the strategy. If during this period the housing market strengthens, the interest-rate environment improves, and local renewal continues, the investor may receive the home from a better starting point than existed when entering the transaction: a new home, at a pre-set price, in an area that continued to develop during the construction period.</p>
+<p>That said, we do not build the model on a forecast of price increases or interest-rate declines. Therefore, area selection is also made with a view to existing rental demand. The goal is to build in locations with an active rental market and relatively low vacancy rates, so that even if the market does not develop exactly as we expect, the investor ends the process with a new home, in an area with rental demand, at an entry price designed to support long-term holding.</p>
+</div>
+</section>
+<section class="content-section wide" id="process">
+<div class="section-copy">
+<div class="eyebrow">Project Management</div>
+<h2>End-to-end guidance and management.</h2>
+<p>For us, the value we bring to the investor is not limited to identifying the transaction. Our role is to accompany and manage the entire process, from the earliest stages of land evaluation to home delivery, leasing, and ongoing management afterward. For the investor, we are the central point of contact throughout the process.</p>
+<p>The work begins with locating and evaluating the land and conducting preliminary transaction checks, and continues with work opposite the title company, attorneys, and professional consultants, through planning, parcelization, architecture and engineering, pricing and tenders, engagement with recognized and properly licensed contractors, execution monitoring, and ongoing coordination among all parties involved in the project.</p>
+<p>At the same time, we coordinate for the investor the required framework around the asset: establishing the appropriate entity, opening a bank account, proper ownership registration, insurance, support in the financing process, home delivery, connection to a property management company, leasing, and ongoing handling of the asset after delivery. The goal is that the investor will not need to personally manage a complex system of architects, engineers, contractors, attorneys, lenders, banks, title companies, insurance companies, and property managers. We bring all parts of the process under one framework, with management, coordination, and control along the way.</p>
+<p>A central part of our work is creating a clear and organized transaction structure, protecting the investor’s rights, and controlling the process and use of funds through agreements, registrations, collateral, and liens according to the structure of each transaction. The goal is to reduce as much as possible risks that arise from lack of order, lack of control, improper use of funds, or lack of transparency, so that the investor is exposed mainly to the natural economic risks that exist in any real-estate investment.</p>
+<p>We are on the ground on an ongoing basis and involved in managing the process throughout. For us, the guidance does not end with construction completion or key delivery. We continue alongside the investor during the financing, leasing, and ongoing management stages, based on the view that the asset is a long-term investment and not a transaction that ends on the purchase day.</p>
+<p>The same view also guides the way we operate ourselves. As we have done in previous projects, in this activity as well we invest alongside the investors and remain with assets similar to those they purchase. We do not see investors as occasional buyers of a product we sell, but as partners in the path and part of an activity we are building for the long term.</p>
+<p>The fact that at the end of the process we remain with assets alongside the investors creates, in our view, a simple and clear alignment of interests: we want for investors what we want for ourselves. Therefore, we examine the land, planning, construction, financing, and future management with the same considerations and the same level of responsibility with which we make decisions about our own capital and assets.</p>
+</div>
+</section>
+<section aria-label="Images from the Document" class="gallery">
+<div class="gallery-head">
+<div class="eyebrow">Images from the Work Materials</div>
+<h2>Houston, developing neighborhoods, and new homes</h2>
+<p>The images are embedded as standard site files, so they can be uploaded to GitHub together with the rest of the site assets and replaced in the future as needed.</p>
+</div>
+<div class="gallery-grid">
+<figure><img alt="Houston skyline" loading="lazy" src="houston-skyline.jpg"/><figcaption>Houston</figcaption></figure>
+<figure><img alt="Single-family home neighborhood" loading="lazy" src="neighborhood-street.jpg"/><figcaption>Residential Neighborhood</figcaption></figure>
+<figure><img alt="New home facades" loading="lazy" src="homes-exterior.jpg"/><figcaption>New Homes</figcaption></figure>
+</div>
+</section>
+<section class="content-section wide" id="handoff">
+<div class="section-copy">
+<div class="eyebrow">After Construction</div>
+<h2>From delivery to long-term ownership.</h2>
+<p>Completion of construction is not the end of the process, but the beginning of the next stage in the life of the investment. Ahead of home delivery, we accompany the investor through the financing and mortgage process, coordinate the required inspections, and support the insurance, closing, and registration process. The goal is to create an orderly and continuous transition from the construction stage to the stage in which the home becomes an income-producing asset.</p>
+<p>After delivery, the home moves to the management of a local property management company that works with us on an ongoing basis. As part of the joint activity, a dedicated service framework has been built for our investors, including Hebrew-language support and personal service, with the goal of addressing all property needs: marketing the home, finding and selecting a tenant, collecting rent, maintenance, and ongoing handling.</p>
+<p>At this stage as well, we continue to be part of the system. The investor remains with a point of contact that knows the asset, the project, and the local professionals, and can assist with coordination and problem-solving even after the home is occupied and managed on an ongoing basis. The goal is to create one continuous process: from land and planning, through permitting and construction, to financing, delivery, leasing, management, and long-term ownership.</p>
+<p>For us, the relationship with the investor does not end with the home purchase. We see the investor as a partner in the path, and as the activity grows and additional assets and investors join it, a stronger local infrastructure is built around all of us, with more experience, purchasing power, relationships, and ability to provide better support over time.</p>
+</div>
+</section>
+<section class="content-section wide" id="next">
+<div class="section-copy">
+<div class="eyebrow">Next Steps</div>
+<h2>How to continue from here.</h2>
+<p>The first step is to get to know the project in depth and understand the location, transaction structure, process stages, and expected timelines. An investor who decides to move forward joins the project’s contractual framework and provides the required initial capital according to the transaction terms. From there, we accompany and manage the entire process: land, planning, subdivision, permitting, construction, inspections, financing, delivery, and connection to the management and leasing framework.</p>
+<p>At the end of the process, after all the complexity that occurs along the way, the investor is left with something simple and clear: a new single-family home in their ownership, with separate financing, a separate account, organized management, and the freedom to make decisions about the asset’s future according to their goals.</p>
+<p>For us, this is the central story of the activity: take a complex development process, manage it for the investor from beginning to end, and at the end of the path remain together with private, new, income-producing assets as part of an activity we are building for the long term.</p><div class="callout"><p>Ultimately, the reason we chose this path is simple. From many paths we examined and operated in over the years, we found here a combination that is right for us: the possibility of benefiting from the economic advantage of a development process, and ultimately remaining with a fully owned single-family home, with the possibility of financing, control over the asset, and an organized long-term management framework.</p><p>Not because this is a perfect or risk-free model, but because after examining the full picture, it is a model we understand, know how to manage, and feel comfortable investing in ourselves alongside our investors.</p></div>
+</div>
+</section>
+<section class="pdf-section" id="proforma">
+<div class="pdf-card">
+<div aria-label="Embedded pro forma example" class="pdf-viewer">
+<iframe src="proforma-example.pdf#toolbar=1&amp;navpanes=0" title="Pro Forma Example"></iframe>
+</div>
+<div class="pdf-info">
+<div class="eyebrow">Numerical Example</div>
+<h2>Full Pro Forma Example</h2>
+<p>The pro forma file remains an independent PDF accessible from the site. It is not broken into page text in order to preserve the document structure, tables, and original design.</p>
+<p>Instead of linking to an external calculator, the page displays a direct link to the pro forma example, allowing the investor to open the full document in the browser or download it.</p>
+<div class="pdf-actions">
+<a class="btn dark" href="proforma-example.pdf" rel="noopener" target="_blank">Open the PDF</a>
+<a class="btn light" download="" href="proforma-example.pdf">Download the PDF</a>
+</div>
+</div>
+</div>
+</section>
+</main>
+<section class="cta" id="contact">
+<div class="cta-inner">
+<h2>Want to Understand Whether the Model Fits You?</h2>
+<p>The first conversation is intended to understand the investment framework, time horizon, appropriate risk level, and whether it makes sense to move forward with reviewing a specific project.</p>
+<a aria-label="Open the Houston investment map" class="btn primary" href="https://yw-abi.github.io/houston-map-en/" rel="noopener" style="display:flex;max-width:360px;margin:0 auto 12px;" target="_blank">Houston Investment Map</a>
+<a aria-label="Start a WhatsApp conversation" class="btn wa-btn" href="https://wa.me/972537650555?text=Hello%2C%20I%20came%20from%20the%20Aspect%20website%20and%20would%20like%20to%20hear%20more%20about%20the%20Houston%20investment%20model." rel="noopener" target="_blank">
+<svg aria-hidden="true" fill="#fff" height="21" viewbox="0 0 24 24" width="21" xmlns="http://www.w3.org/2000/svg"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm5.8 14.13c-.24.68-1.42 1.31-1.95 1.36-.5.05-.96.24-3.23-.67-2.73-1.08-4.46-3.86-4.6-4.04-.13-.18-1.1-1.46-1.1-2.79 0-1.33.7-1.98.95-2.25.24-.27.53-.34.71-.34.18 0 .35 0 .51.01.16.01.39-.06.6.46.24.58.81 2 .88 2.14.07.14.12.31.02.49-.09.18-.14.29-.27.45-.14.16-.29.36-.41.48-.14.14-.28.29-.12.56.16.27.71 1.17 1.53 1.9 1.05.94 1.94 1.23 2.21 1.37.27.14.43.12.59-.07.16-.18.68-.79.86-1.06.18-.27.36-.22.6-.13.24.09 1.55.73 1.82.86.27.14.45.2.51.31.07.12.07.66-.17 1.32z"></path></svg>
+        Start a WhatsApp Conversation
+      </a>
+</div>
+</section>
+<div class="disclaimer">
+<h3>Disclosure and Disclaimer</h3>
+<p>The information in this document is intended for general informational purposes only and does not constitute an offer to purchase a property, investment advice, financial advice, legal advice, tax advice, or a commitment to any outcome. Data, examples, ranges, and projections presented orally or in writing are indicative only and may change due to market conditions and factors beyond our control. Each investor is required to conduct independent due diligence and consult appropriate professional advisors before making a decision. This document is intended for relevant recipients only and is not intended for public distribution or commercial use without prior written approval.</p>
+</div>
+<footer>
+<b>Aspect Boutique Investments</b><br/>
+    This document is intended for relevant recipients only and is not intended for public distribution or commercial use without prior written approval.
+  </footer>
+<a aria-label="WhatsApp" class="floating-wa" href="https://wa.me/972537650555?text=Hello%2C%20I%20came%20from%20the%20Aspect%20website%20and%20would%20like%20to%20hear%20more%20about%20the%20Houston%20investment%20model." rel="noopener" target="_blank">
+<svg aria-hidden="true" fill="#fff" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm5.8 14.13c-.24.68-1.42 1.31-1.95 1.36-.5.05-.96.24-3.23-.67-2.73-1.08-4.46-3.86-4.6-4.04-.13-.18-1.1-1.46-1.1-2.79 0-1.33.7-1.98.95-2.25.24-.27.53-.34.71-.34.18 0 .35 0 .51.01.16.01.39-.06.6.46.24.58.81 2 .88 2.14.07.14.12.31.02.49-.09.18-.14.29-.27.45-.14.16-.29.36-.41.48-.14.14-.28.29-.12.56.16.27.71 1.17 1.53 1.9 1.05.94 1.94 1.23 2.21 1.37.27.14.43.12.59-.07.16-.18.68-.79.86-1.06.18-.27.36-.22.6-.13.24.09 1.55.73 1.82.86.27.14.45.2.51.31.07.12.07.66-.17 1.32z"></path></svg>
+</a>
+<script>
+    const progress = document.getElementById('progress');
+    function updateProgress() {
+      const page = document.documentElement;
+      const max = page.scrollHeight - page.clientHeight || 1;
+      progress.style.width = `${(page.scrollTop / max) * 100}%`;
+    }
+    addEventListener('scroll', updateProgress, { passive: true });
+    updateProgress();
+  </script>
+</body>
+</html>
